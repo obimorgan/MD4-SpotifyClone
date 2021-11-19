@@ -1,18 +1,81 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: rgb(105, 9, 9);
+  position: relative;
 }
 
 body {
   margin: 0;
-  padding: 0
+  padding: 0;
+  background: rgb(105, 9, 9);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 9, 9, 0.9304096638655462) 9%,
+    rgba(0, 0, 0, 1) 37%
+  );
 }
 
 .Sidebar {
   padding: 0;
   margin: 0;
   height: 100vh;
-  width: 250px;
+  width: 25vw;
   background-color: black;
+  position: relative;
+
+}
+
+.list {
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.navItem {
+  width: 100%;
+  height: 40px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(218, 220, 222);
+  text-align: end;
+
+}
+.navItem:hover {
+  background-color: rgb(159, 156, 156);
+}
+.songList {
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.songNavItem {
+  width: 100%;
+  height: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(218, 220, 222);
+  text-align: end;
+
+}
+
+.CardsContainer {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: 75vw;
+  position: absolute;
+  left: 250px;
+  bottom: 0px;
 }
